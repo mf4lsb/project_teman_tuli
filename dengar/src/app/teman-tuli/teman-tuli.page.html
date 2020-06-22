@@ -1,0 +1,40 @@
+<ion-content [fullscreen]="true">
+  <ion-segment
+    (ionChange)="segmentChanged($event)"
+    color="info"
+    value="home"
+    [(ngModel)]="selectTabs"
+  >
+    <ion-segment-button value="camera">
+      <ion-icon name="camera"></ion-icon>
+    </ion-segment-button>
+    <ion-segment-button value="home">
+      <ion-icon name="home"></ion-icon>
+    </ion-segment-button>
+  </ion-segment>
+
+  <div *ngIf="selectTabs == 'camera'">
+    <ion-button color="primary" (click)="startCamera()">Start Front</ion-button>
+    <ion-button color="danger" (click)="stopCamera()">Stop Camera</ion-button>
+  </div>
+
+  <div *ngIf="selectTabs == 'home'">
+    <ion-card style="height: 50%;">
+      <ion-card-content>
+        <p>Hallooo</p>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card>
+      <ion-card-header class="text-center">
+        <ion-card-subtitle>
+          Teman Dengar
+        </ion-card-subtitle>
+        <ion-item-divider></ion-item-divider>
+      </ion-card-header>
+      <ion-card-content class="text-center">
+        "Halo"
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>

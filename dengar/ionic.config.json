@@ -1,5 +1,7 @@
 {
   "name": "dengar",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
