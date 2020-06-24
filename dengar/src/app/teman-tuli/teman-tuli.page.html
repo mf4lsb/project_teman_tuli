@@ -1,10 +1,5 @@
 <ion-content [fullscreen]="true">
-  <ion-segment
-    (ionChange)="segmentChanged($event)"
-    color="info"
-    value="home"
-    [(ngModel)]="selectTabs"
-  >
+  <ion-segment (ionChange)="segmentChanged($event)" color="info" value="home" [(ngModel)]="selectTabs">
     <ion-segment-button value="camera">
       <ion-icon name="camera"></ion-icon>
     </ion-segment-button>
@@ -27,16 +22,8 @@
       </ion-card-content>
     </ion-card>
 
-    <ion-card
-      color="info"
-      style="height: 20%;"
-      style="
-        --background: #f9f9f9;
-        border-bottom-left-radius: 20px;
-        border-top-right-radius: 20px;
-      "
-    >
-      <ion-card-header class="text-center">
+    <ion-card style=" --background: #f9f9f9; border-bottom-left-radius: 20px; border-top-right-radius: 20px; ">
+      <ion-card-header class=" text-center">
         <ion-card-subtitle>
           Teman Dengar
         </ion-card-subtitle>
