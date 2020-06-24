@@ -17,11 +17,12 @@ ion-card-subtitle {
     font-size: 18px;
     font-weight: bold;
     font-family: 'Montserrat';
+    text-transform: uppercase;
 }
 
 ion-card-content {
     font-family: "roboto";
-    font-size: 15px;
+    font-size: 14px;
 }
 
 ion-input {
@@ -45,4 +46,13 @@ ion-input {
     --ion-color-contrast-rgb: var(--ion-color-white-contrast-rgb);
     --ion-color-shade: var(--ion-color-white-shade);
     --ion-color-tint: var(--ion-color-white-tint);
+}
+
+ion-item-divider {
+    margin-top: 22px;
+    min-height: 2px !important;
+}
+
+ion-card-content {
+    text-align: center;
 }

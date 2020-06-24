@@ -1,14 +1,20 @@
-<ion-tabs>
-  <ion-tab-bar slot="bottom" color="white">
-    <ion-tab-button tab="teman-tuli">
-      <ion-icon name="home"></ion-icon>
-      <ion-label>Teman Tuli</ion-label>
-      <!-- <ion-badge>6</ion-badge> -->
-    </ion-tab-button>
-
-    <ion-tab-button tab="teman-dengar" color="info">
-      <ion-icon name="square"></ion-icon>
-      <ion-label>Teman Dengar</ion-label>
-    </ion-tab-button>
-  </ion-tab-bar>
+<ion-tabs (ionTabsDidChange)="didChangeTab($event)">
+  <div>
+    <ion-tab-bar>
+      <ion-grid>
+        <ion-row>
+          <ion-col [ngClass]="{activate: tab == 'teman-tuli'}">
+            <ion-tab-button tab="teman-tuli">
+              <ion-icon [src]="tabTuliIcon"></ion-icon>
+            </ion-tab-button>
+          </ion-col>
+          <ion-col [ngClass]="{activate: tab == 'teman-dengar'}">
+            <ion-tab-button tab="teman-dengar">
+              <ion-icon [src]="tabDengarIcon"></ion-icon>
+            </ion-tab-button>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-tab-bar>
+  </div>
 </ion-tabs>

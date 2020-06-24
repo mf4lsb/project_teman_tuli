@@ -15,3 +15,21 @@
     --ion-color-shade: var(--ion-color-white-shade);
     --ion-color-tint: var(--ion-color-white-tint);
 }
+
+ion-tab-button {
+    // --padding-end: 0px;
+    // --padding-start: 10px;
+    // --padding-bottom: 0px;
+    // --margin-left: 0px;
+    // --margin-right: 0px;
+    // transition: 0.2s ease-in;
+
+    ion-icon {
+        font-size: 40px;
+    }
+}
+
+.activate {
+    background-color: #7ABBC1;
+    border-radius: 5px;
+}

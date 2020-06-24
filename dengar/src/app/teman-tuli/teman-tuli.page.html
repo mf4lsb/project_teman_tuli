@@ -19,13 +19,23 @@
   </div>
 
   <div *ngIf="selectTabs == 'home'">
-    <ion-card style="height: 50%;">
+    <ion-card color="danger">
       <ion-card-content>
-        <p>Hallooo</p>
+        <div class="card2">
+          Template gambar disini
+        </div>
       </ion-card-content>
     </ion-card>
 
-    <ion-card>
+    <ion-card
+      color="info"
+      style="height: 20%;"
+      style="
+        --background: #f9f9f9;
+        border-bottom-left-radius: 20px;
+        border-top-right-radius: 20px;
+      "
+    >
       <ion-card-header class="text-center">
         <ion-card-subtitle>
           Teman Dengar
@@ -33,7 +43,7 @@
         <ion-item-divider></ion-item-divider>
       </ion-card-header>
       <ion-card-content class="text-center">
-        "Halo"
+        "Hi, Mari berkenalan!"
       </ion-card-content>
     </ion-card>
   </div>
