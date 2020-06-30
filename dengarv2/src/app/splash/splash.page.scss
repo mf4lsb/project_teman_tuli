@@ -1,0 +1,36 @@
+ion-content{
+    --background: #0E9AA7;
+}
+
+img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h1{
+    color: white;
+    position: absolute;
+    text-align: center;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    line-height: 31px;
+    letter-spacing: 0.06em;
+}
+
+p{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 12px;
+    
+}
+
+
