@@ -1,0 +1,52 @@
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Arimo&display=swap" rel="stylesheet">
+</head>
+<!-- <ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Blank
+    </ion-title>
+  </ion-toolbar>
+</ion-header> -->
+
+<ion-content [fullscreen]="true">
+  <!-- <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Blank</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div id="container">
+    <strong>Ready to create an app?</strong>
+    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+  </div> -->
+  <div class="segment">
+    <ion-segment (ionChange)="segmentChanged($event)" [(ngModel)]="segment" color="info" [options]="slideOpts">
+      <ion-segment-button value="0">
+        <ion-label>Teman Dengar</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="1">
+        <ion-label>Teman Tuli</ion-label>
+      </ion-segment-button>
+    </ion-segment>
+  </div>
+  <ion-slides #slides (ionSlideDidChange)="slideChanged()" scrollbar="true">
+    <ion-slide>
+      <div class="camera">
+        <p>Camera Preview</p>
+      </div>
+      <div class="sign">
+        <p>Text for Sign Language Recognition</p>
+      </div>
+    </ion-slide>
+    <ion-slide>
+      <div class="animation">
+        Animation Image Sign Language
+      </div>
+      <div class="page">
+        <h1>Page</h1>
+        <ion-input></ion-input>
+      </div>
+    </ion-slide>
+  </ion-slides>
+</ion-content>
