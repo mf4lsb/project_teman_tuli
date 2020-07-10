@@ -1,5 +1,5 @@
 <head>
-  <link href="https://fonts.googleapis.com/css2?family=Arimo&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Arimo&display=swap" rel="stylesheet" />
 </head>
 <!-- <ion-header [translucent]="true">
   <ion-toolbar>
@@ -36,16 +36,31 @@
         <p>Camera Preview</p>
       </div>
       <div class="sign">
-        <p>Text for Sign Language Recognition</p>
+        <h1>Text for Sign Language Recognition</h1>
       </div>
     </ion-slide>
     <ion-slide>
       <div class="animation">
-        Animation Image Sign Language
+        <img src="../../assets/img/sign-language/{{result}}.svg" alt="">
       </div>
       <div class="page">
-        <h1>Page</h1>
-        <ion-input></ion-input>
+        <h1>Teman Tuli Page</h1>
+        <form [formGroup]="temanDengarForm" (ngSubmit)="submitForm()" novalidate>
+          <ion-grid>
+            <ion-row>
+              <ion-col size="10">
+                <ion-input type="text" clearInput placeholder="Katakan sesuatu..." formControlName="message">
+                </ion-input>
+              </ion-col>
+              <ion-col size="2">
+                <ion-button size="default" fill="clear" style="padding-left: -5px; margin-left: -2px;" type="submit">
+                  <ion-icon name="enter" color="info" size="large" style="margin-left: -10px;"></ion-icon>
+                </ion-button>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </form>
+        <h4>{{msg}}</h4>
       </div>
     </ion-slide>
   </ion-slides>

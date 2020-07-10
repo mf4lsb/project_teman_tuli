@@ -19,6 +19,7 @@ import { CameraPreview } from "@ionic-native/camera-preview/ngx";
     StatusBar,
     SplashScreen,
     CameraPreview,
+    StatusBar,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
   ],
   bootstrap: [AppComponent],
